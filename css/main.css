@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 }
 :root {
-	--index: calc(1vw + 1vh);
 	--text: #e7e7e0;
 	--transition: transform .75s cubic-bezier(.075, .5, 0, 1);
 }
@@ -30,12 +29,12 @@ body {
 	position: absolute;
 	z-index: 100;
 	width: 100%;
-	height: calc(var(--index) * 10);
+	height: clamp(6rem, 3.8873rem + 9.0141vw, 12rem);
 	background-image: url(../img/ground.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	bottom: calc(var(--index) * -4.5);
+	bottom: clamp(-4rem, -3.296rem + -3.005vw, -6rem);
 }
 .layers {
 	height: 100vh;
@@ -77,13 +76,13 @@ body {
 	text-shadow: 0 0 15px #9d822b;
 }
 .layers__title {
-	font-size: calc(var(--index) * 1.7);
-	letter-spacing: calc(var(--index) / 2.25);
+	font-size: clamp(1.5rem, 1.148rem + 1.502vw, 2.5rem);
+	letter-spacing: clamp(0.25rem, 0.162rem + 0.376vw, 0.5rem);
 }
 .layers__caption {
-	font-size: calc(var(--index) / 1.175);
-	letter-spacing: calc(var(--index) / 3.5);
-	margin-top: calc(var(--index) * -.75);
+	font-size: clamp(0.6rem, 0.459rem + 0.601vw, 1rem);
+	letter-spacing: clamp(0.2rem, 0.112rem + 0.376vw, 0.45rem);
+	margin-top: clamp(-0.8rem, -0.73rem + -0.3vw, -1rem);
 }
 .main-article {
 	--main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
@@ -102,16 +101,16 @@ body {
 }
 .main-article__header {
 	text-transform: uppercase;
-	font-size: calc(var(--index) * 1.8);
-	letter-spacing: calc(var(--index) / 7.5);
+	font-size: clamp(1.5rem, 1.148rem + 1.502vw, 2.5rem);
+	letter-spacing: clamp(0.1rem, 0.065rem + 0.15vw, 0.2rem);
 	transform: var(--main-article-transform);
 	transition: var(--transition);
 	will-change: transform;
 }
 .main-article__paragraph {
-	max-width: calc(var(--index) * 30);
-	font-size: calc(var(--index) * .9);
-	margin-top: calc(var(--index) / 1.25);
+	max-width: clamp(22rem, 15.662rem + 27.042vw, 40rem);
+	font-size: clamp(0.75rem, 0.486rem + 1.127vw, 1.5rem);
+	margin-top: clamp(0.45rem, 0.292rem + 0.676vw, 0.9rem);
 	transform: var(--main-article-transform);
 	transition: var(--transition);
 	will-change: transform;
@@ -121,8 +120,8 @@ body {
 }
 .copy {
 	position: absolute;
-	bottom: calc(var(--index) * 2.5);
+	bottom: clamp(1.5rem, 0.796rem + 3.005vw, 3.5rem);
 	opacity: .45;
-	font-size: calc(var(--index) * .75);
-	letter-spacing: calc(var(--index) / 37.5);
+	font-size: clamp(0.7rem, 0.594rem + 0.451vw, 1rem);
+	letter-spacing: clamp(0.02rem, 0.009rem + 0.045vw, 0.05rem);
 }
