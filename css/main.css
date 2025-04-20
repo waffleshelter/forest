@@ -34,7 +34,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	bottom: clamp(-4rem, -3.296rem + -3.005vw, -6rem);
+	bottom: clamp(-3rem, -2.296rem + -3.005vw, -5rem);
 }
 .layers {
 	height: 100vh;
